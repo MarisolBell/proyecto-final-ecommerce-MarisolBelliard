@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import helmet from 'helmet';
 import path from "path";
 import { fileURLToPath } from "url";
+import productRoutes from "./src/routes/productsRoutes.js";
 
 
 // Inicializaciones
@@ -21,6 +22,7 @@ const allowedOrigin = isProduction
 // Middleware de CORS dinámico
 const corsOptions = {
   origin: allowedOrigin,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
@@ -44,11 +46,12 @@ app.get('/', (req, res) => {
 res.send('Hola, mundo desde Express!'); 
 }); 
 
- 
+ // Rutas de la API
+app.use("/api", productRoutes);
 
 // Middleware 404 para rutas no encontradas
 app.use((req, res) => {
-  res.status(404).json({ message: "Ruta no encontrada" });
+  res.status(404).json({ message: "Ruta no encontrada o recurso inválido." });
 });
 
 // Middleware global para errores internos

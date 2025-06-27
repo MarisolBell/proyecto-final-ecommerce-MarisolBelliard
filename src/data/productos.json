@@ -1,0 +1,233 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cinto Madison",
+        "descripcion": "CINTO ELASTIZADO RAFIA BRILLOS HEBILLA OVALO METALIZADO.Medidas: Talle UNICO regulable del 34 al 42.Ancho: 4,9 cm",
+        "imagen": ["https://i.postimg.cc/gcZ4RwDb/imagen-Cinto-Rafia-Negro.webp","https://i.postimg.cc/DZtgHF7N/imagen-Cinto-Rafia-Negro2.webp"],
+        "precio": 12000,
+        "stock": 8,
+        "categoria": "cintos"
+       
+    },
+    {
+        "id": 2,
+        "nombre": "Cinto Carol",
+        "descripcion": "CINTO RAFIA ELASTIZADO HEBILLA MADERA CUADRADA.Talle UNICO Regulable del 34 al 42 Ancho: 4,8 cm",
+        "imagen":["https://i.postimg.cc/d1mrSnCd/imagen-Rafia-Madera.webp","https://i.postimg.cc/FzCf26Hf/imagen-Rafia-Madera2.png"], 
+        "precio": 17000,
+        "stock": 5,
+        "categoria": "cintos"
+    
+    },
+    {
+        "id": 3,
+        "nombre": "Cinto Milena",
+        "descripcion": "CINTO TRENZADO HEBILLA REDONDA.Talle ÚNICO regulable del 34 al 42 Ancho: 3,5 cm",
+        "imagen": ["https://i.postimg.cc/W41XJX95/imagen-Cinturon-Trenzado.webp","https://i.postimg.cc/9MS82ZYJ/imagen-Cinturon-Trenzado2.png"],
+        "precio": 15000,
+        "stock": 5,
+        "categoria": "cintos"
+        
+    },
+    {
+        "id": 4,
+        "nombre": "Caderin Elisa",
+        "descripcion": "CADERIN CIRCULO CON DISEÑO.Talle UNICO regulable desde 69 cm hasta 110 cm",
+        "imagen": ["https://i.postimg.cc/KcwwhS9x/imagen-Collares-Caderin.webp","https://i.postimg.cc/yN1cDtrG/imagen-Collares-Caderin2.webp"],
+        "precio": 11000,
+        "stock": 3,
+        "categoria": "collares"
+      
+    },
+    {
+        "id": 5,
+        "nombre": "Sobre Moscu",
+        "descripcion": "CLUTCH MOSCU.Medidas:Largo: 22 cm.Ancho: 12 cm",
+        "imagen": ["https://i.postimg.cc/3xSJZqxV/imagen-Cartera-Clutch.webp","https://i.postimg.cc/Twyym6jt/imagen-Cartera-Clutch2.png"],
+        "precio": 43500,
+        "stock": 2,
+        "categoria": "billeteras"
+       
+    },
+    {
+        "id": 6,
+        "nombre": "Pulsera Marilyn",
+        "descripcion": "PULSERA METALICA CADENA CON STRASS.TALLE UNICO Ancho: 2,5 cm",
+        "imagen":["https://i.postimg.cc/0NDFN6Fn/imagen-Pulsera-Cadena.webp","https://i.postimg.cc/66m0DW1p/imagen-Pulsera-Cadena2.webp"], 
+        "precio": 15900,
+        "stock": 2,
+        "categoria": "pulseras"
+        
+    },
+    {
+        "id": 7,
+        "nombre": "Set Pulseras Emilia",
+        "descripcion": "SET PULSERAS RIGIDAS FORRADA CON TEJIDO Y TRENZADAS.Talle UNICO Diametro: 7 cm",
+        "imagen":[ "https://i.postimg.cc/sxwtRtqR/imagen-Pulsera-Set.png","https://i.postimg.cc/Y9N5d4x0/imagen-Pulsera-Set2.png"],
+        "precio": 9900,
+        "stock": 6,
+        "categoria": "pulseras"
+    },
+    {
+        "id": 8,
+        "nombre": "Pulsera Adela",
+        "descripcion": "ADELANTO FW2025 PULSERA CADENA DIJE CORAZON Y PERLA.TALLE UNICO regulable Dije: 2,5 x 3 cm",
+        "imagen": ["https://i.postimg.cc/BQZ0wCk0/imagen-Pulsera-Corazon-Perla.webp","https://i.postimg.cc/YqtrB74T/imagen-Pulsera-Corazon-Perla2.png"] ,
+        "precio": 9000,
+        "stock": 12,
+        "categoria": "pulseras"
+        
+    },
+    {
+        "id": 9,
+        "nombre": "Aros Praga",
+        "descripcion": "AROS ARGOLLA MAXI FULL STRASS.Talle UNICO Largo: 4 cm",
+        "imagen": ["https://i.postimg.cc/7h5K0gFz/imagen-Aros-Argolla.png","https://i.postimg.cc/fRJ7Tc4n/imagen-Aros-Argolla2.webp"],
+        "precio": 9900,
+        "stock": 2,
+        "categoria": "aros"
+        
+    },
+    {
+        "id": 10,
+        "nombre": "Collar Amapola",
+        "descripcion": "COLLAR DIJES CUADRADOS TRANSPARENTES CON DETALLES",
+        "imagen": ["https://i.postimg.cc/yxpVsfr2/imagen-Collar-Amapola.png","https://i.postimg.cc/pXVwBY1n/imagen-Collar-Amapola2.png"],
+        "precio": 18500,
+        "stock": 9,
+        "categoria": "collares"
+        
+    },
+    {
+        "id": 11,
+        "nombre": "Billetera Flowers",
+        "descripcion": "BILLETERA SIMPLE REPTIL Y FLORES.Medidas:Largo: 19 cm,Ancho: 10 cm,Grosor: 2 cm",
+        "imagen": ["https://i.postimg.cc/x8B1LxyM/imagen-Billetera-Reptil.png","https://i.postimg.cc/K8wCxXcn/imagen-Billetera-Reptil2.webp"],
+        "precio": 14000,
+        "stock": 20,
+        "categoria": "billeteras"
+        
+    },
+    {
+        "id": 12,
+        "nombre": "Aros Jazmin",
+        "descripcion": "AROS MAXI FLOR METALIZADA CON PERLA,TALLE UNICO Medidas: 4 cm x 4 cm",
+        "imagen": ["https://i.postimg.cc/26s5Z9xv/imagen-Aros-Maxi-Flor.webp","https://i.postimg.cc/DwvwLX1C/imagen-Aros-Maxi-FLor2.webp"],
+        "precio": 14000,
+        "stock": 20,
+        "categoria": "aros"
+        
+    },
+    {
+        "id": 13,
+        "nombre": "Aros Alelí",
+        "descripcion": "AROS MEDIA FLOR CON TEXTURA METALIZADOS.Talle UNICO. Medidas : Largo 5 cm",
+        "imagen": ["https://i.postimg.cc/gjgB7QBL/imagen-Aros-Media-Flor.webp","https://i.postimg.cc/5Ntrz96B/imagen-Aros-Media-Flor2.webp"],
+        "precio": 9000,
+        "stock": 10,
+        "categoria": "aros"
+        
+    },
+    {
+        "id": 14,
+        "nombre": "Aros Milena",
+        "descripcion": "AROS GOTA FULL STRASS.Talle UNICO Largo: 3 cm",
+        "imagen": ["https://i.postimg.cc/QCdfcSx8/imagen-Aros-Gota-Strass.webp","https://i.postimg.cc/SR1Dd8JW/imagen-Aros-Gota-Strass2.webp"],
+        "precio": 13000,
+        "stock": 16,
+        "categoria": "aros"
+        
+    },
+    {
+        "id": 15,
+        "nombre": "Pulsera Marisol",
+        "descripcion": "PULSERA RIGIDA CORAZONES PUNTILLADOS.Talle UNICO.Ancho: 2,5 cm",
+        "imagen": ["https://i.postimg.cc/jd9MJHVT/imagen-Pulsera-Corazones.png","https://i.postimg.cc/DwXBQSFX/imagen-Pulsera-Corazones2.webp"] ,
+        "precio": 14000,
+        "stock": 20,
+        "categoria": "pulseras"
+        
+    },
+    {
+        "id": 16,
+        "nombre": "Billetera Amanda",
+        "descripcion": "BILLETERA CLUTCH LINEAS.Medidas: 20,5 x 10 x 2,6 cm",
+        "imagen": ["https://i.postimg.cc/4dJPTwc6/imagen-Billetera-Lineas.webp","https://i.postimg.cc/1XXK8tJ4/imagen-Billetera-Lineas2.png"],
+        "precio": 15000,
+        "stock": 10,
+        "categoria": "billeteras"
+        
+    },
+    {
+        "id": 17,
+        "nombre": "Billetera Milie",
+        "descripcion": "BILLETERA TRIPLE CON FRANJA REPTIL.Medidas: Largo:19 cm Ancho: 10 cm Grosor: 4 cm",
+        "imagen": ["https://i.postimg.cc/d09RndfL/imagen-Billetera-Triple.png","https://i.postimg.cc/sfWY0tqk/imagen-Billetera-Triple2.webp"],
+        "precio": 21000,
+        "stock": 10,
+        "categoria": "billeteras"
+        
+    },
+    {
+        "id": 18,
+        "nombre": "Cinto Ludmila",
+        "descripcion": "CINTO FINO STRASS HEBILLA CUADRADA CON PIEDRAS.Talle UNICO regulable del 34 al 42 Ancho: 1,7 cm",
+        "imagen": ["https://i.postimg.cc/wjjsHP4T/imagen-Cinto-Strass.png","https://i.postimg.cc/6Q724ZNk/imagen-Cinto-Strass2.webp"],
+        "precio": 17000,
+        "stock": 3,
+        "categoria": "cintos"
+        
+    },
+    {
+        "id": 20,
+        "nombre": "Collar Dorothy",
+        "descripcion": "COLLAR DOBLE TIRA METALIZADA.Talle UNICO.Medidas: Largo 48 cm",
+        "imagen": ["https://i.postimg.cc/wM9j2yST/imagen-Collar-Tira-Doble.png","https://i.postimg.cc/0jZ2B5sG/imagen-Collar-Tira-Doble2.webp"],
+        "precio": 12000,
+        "stock": 7,
+        "categoria": "collares"
+        
+    },
+    {
+        "id": 21,
+        "nombre": "Collar Melody",
+        "descripcion": "COLLAR CORAZON ESPEJADO.Talle UNICO regulable hasta 45 cm.Ancho dije: 3 cm",
+        "imagen": ["https://i.postimg.cc/3RFKkrdM/imagen-Collar-Cora-Espejado.webp","https://i.postimg.cc/QdvNPnRz/imagen-Collar-Cora-Espejado2.webp"],
+        "precio": 9000,
+        "stock": 20,
+        "categoria": "collares"
+        
+    },
+    {
+        "id": 22,
+        "nombre": "Pulsera Amelie",
+        "descripcion": "PULSERA DOBLE CADENA.Medidas.Largo: 11 cm.Ancho: 2 cm",
+        "imagen": ["https://i.postimg.cc/gc4zd0C8/imagen-Pulsera-Eslabon.webp","https://i.postimg.cc/x8dSqKwH/imagen-Pulsera-Eslabon2.webp"] ,
+        "precio": 8000,
+        "stock": 10,
+        "categoria": "pulseras"
+        
+    },
+    {
+        "id": 23,
+        "nombre": "Aros Lucrecia",
+        "descripcion": "AROS CON PIEDRAS Y MEDIAS ARANDELAS.TALLE UNICO Medidas : 3.5 x 3 cm",
+        "imagen": ["https://i.postimg.cc/GhV1hTq8/imagen-Aros-Piedra.png","https://i.postimg.cc/MpBJcZFs/imagen-Aros-Piedra2.webp"],
+        "precio": 13000,
+        "stock": 13,
+        "categoria": "aros"
+        
+    },
+    {
+        "id": 24,
+        "nombre": "Caderín Nuria",
+        "descripcion": "CADERIN ELASTIZADO HEBILLA HOJA LISA.Talle UNICO Elastizado Medida hebilla: 9 cm x 3,5 cm",
+        "imagen": ["https://i.postimg.cc/wv6CbXTP/imagen-Cinto-Hoja.png","https://i.postimg.cc/wv0CK11B/imagen-Cinto-Hoja2.webp"],
+        "precio": 12000,
+        "stock": 14,
+        "categoria": "cintos"
+        
+    }
+
+]
+
