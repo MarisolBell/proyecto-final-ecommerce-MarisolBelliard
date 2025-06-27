@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "4c60d7ed-2dbb-4f9a-9154-6c852822a723",
+		"name": "E-commerceVoila",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36226506"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ejemplo@email.com\",\r\n  \"password\": \"admin123\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTc1MDMzODcwNywiZXhwIjoxNzUwMzQyMzA3fQ.w9ZiAYhyoc2QzxYDjXXL3ruhz67LKzcwZ20AF9IJun4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \r\n        \"nombre\": \"Cinto Carol\",\r\n        \"descripcion\": \"CINTO RAFIA ELASTIZADO HEBILLA MADERA CUADRADA.Talle UNICO Regulable del 34 al 42 Ancho: 4,8 cm\",\r\n        \"imagen\":[\"https://i.postimg.cc/d1mrSnCd/imagen-Rafia-Madera.webp\",\"https://i.postimg.cc/FzCf26Hf/imagen-Rafia-Madera2.png\"], \r\n        \"precio\": 17000,\r\n        \"stock\": 5,\r\n        \"categoria\": \"cintos\"\r\n    \r\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdnNVZzcTUwM1Y0ZTJsQmtrY1RlIiwiZW1haWwiOiJlamVtcGxvQGVtYWlsLmNvbSIsImlhdCI6MTc1MTAzNzc5NiwiZXhwIjoxNzUxMDQxMzk2fQ.gIsXI0U7_lpmPTzur5qYHJGIU_L6RZDPKOmiqa_AlP0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"nombre\": \"Sobre Moscu\",\r\n        \"descripcion\": \"CLUTCH MOSCU.Medidas:Largo: 22 cm.Ancho: 12 cm\",\r\n        \"imagen\": [\"https://i.postimg.cc/3xSJZqxV/imagen-Cartera-Clutch.webp\",\"https://i.postimg.cc/Twyym6jt/imagen-Cartera-Clutch2.png\"],\r\n        \"precio\": 43500,\r\n        \"stock\": 1,\r\n        \"categoria\": \"billeteras\"\r\n       \r\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/4oi9X4awcvWfvBgTydqx",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"4oi9X4awcvWfvBgTydqx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/products/JXrrQIHLCPsCk1eewevY",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"JXrrQIHLCPsCk1eewevY"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ1c2VyQGVtYWlsLmNvbSIsImlhdCI6MTc1MDM1Mzk3OCwiZXhwIjoxNzUwMzU3NTc4fQ.hKJwkZn4LeIFaY9NIsgGKcGviIQxCafeLweb3gFZHbA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/iG58XCMJPH4IsAHsBNnk",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"iG58XCMJPH4IsAHsBNnk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/products/search?q=carol",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "carol"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/products/filter?categoria=collares",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "categoria",
+							"value": "collares"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ejemplo@email.com\",\r\n  \"password\": \"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ParcialChangeProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdnNVZzcTUwM1Y0ZTJsQmtrY1RlIiwiZW1haWwiOiJlamVtcGxvQGVtYWlsLmNvbSIsImlhdCI6MTc1MTAzNzc5NiwiZXhwIjoxNzUxMDQxMzk2fQ.gIsXI0U7_lpmPTzur5qYHJGIU_L6RZDPKOmiqa_AlP0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n       \r\n        \"stock\": 2\r\n       \r\n    }"
+				},
+				"url": {
+					"raw": "localhost:3000/api/products/4oi9X4awcvWfvBgTydqx",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"4oi9X4awcvWfvBgTydqx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

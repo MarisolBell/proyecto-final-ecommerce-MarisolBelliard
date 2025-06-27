@@ -4,9 +4,12 @@ Este proyecto es una API backend desarrollada en Node.js y Express.js que permit
 
 ## Características Principales
 
-* **Gestión de Productos**: Operaciones CRUD completas (Crear, Leer, Actualizar, Eliminar) para productos.
+* **Gestión de Productos**: Operaciones CRUD completas (Crear, Leer, Actualizar de manera parcial o completa , Eliminar) para productos.
+* **Filtro de productos**: Filtrado por nombre, categoría y precios desde query params.
+* **Búsqueda de productos**: Por palabra clave en nombre o descripción.
 * **Autenticación de Usuarios**: Endpoint de login que genera un Bearer Token (JWT) para usuarios autenticados.
 * **Rutas Protegidas**: Las rutas para crear, actualizar y eliminar productos requieren un token JWT válido.
+* **Modo dual de almacenamiento**: Local (archivo JSON) o Firestore.
 * **Integración con Firebase**: Utiliza Firestore para el almacenamiento persistente de los datos de los productos.
 * **Configuración Dinámica de CORS**: Permite peticiones de origen cruzado, con orígenes permitidos configurables según el entorno (desarrollo/producción).
 * **Variables de Entorno**: Manejo seguro de configuraciones sensibles a través de archivos `.env`.
@@ -76,3 +79,38 @@ Para iniciar el servidor, ejecuta:
 
 ```bash
 npm run start
+
+## Endpoints principales
+
+- `POST /auth/login` → Login y obtención de token
+- `GET /api/products` → Listar todos los productos
+- `GET /api/products/:id` → Obtener producto por ID
+- `POST /api/products/create` → Crear producto (requiere token)
+- `PUT /api/products/:id` → Actualizar producto completo (requiere token)
+- `PATCH /api/products/:id` → Actualizar parcialmente un producto (requiere token)
+- `DELETE /api/products/:id` → Eliminar producto (requiere token)
+- `GET /api/products/search?q=xxx` → Buscar por nombre o descripción
+- `GET /api/products/filter?categoria=...&precioMin=...&precioMax=...` → Filtrar productos
+
+## Usuario de prueba para obtener el token
+
+Email: "ejemplo@email.com"  
+Password: "admin123"
+
+## Colección Postman
+
+Podés descargar la colección de pruebas Postman para importar y probar fácilmente los endpoints:
+
+ [Descargar colección](./docs/E-commerceVoila.postman_collection.json)
+
+o acceder a través del siguiente link:
+
+https://web.postman.co/workspace/09b93cda-5a56-4876-87bb-9ea68592353b/collection/36226506-4c60d7ed-2dbb-4f9a-9154-6c852822a723?action=share&source=copy-link&creator=36226506
+
+
+
+## Despliegue
+
+La API está desplegada y disponible en:
+ [https://]
+
