@@ -1,21 +1,25 @@
 {
   "name": "proyectofinalecommercemarisolbelliard",
   "version": "1.0.0",
+  "description": "Creación de un servidor con node.js y express. Armado de capas de la aplicación.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "start": "cross-env NODE_ENV=production node index.js"
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "start": "cross-env NODE_ENV=production node src/index.js"
   },
   "keywords": [],
   "author": "Marisol Belliard",
-  "license": "ISC",
-  "description": "Creación de un servidor con node.js y express. Armado de capas de la aplicación.",
+  "license": "MIT",
+  
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "helmet": "^8.1.0"
+    "firebase": "^11.9.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",

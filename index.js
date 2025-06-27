@@ -5,6 +5,7 @@ import helmet from 'helmet';
 import path from "path";
 import { fileURLToPath } from "url";
 import productRoutes from "./src/routes/productsRoutes.js";
+import authRouter from './src/routes/authRoutes.js'; 
 
 
 // Inicializaciones
@@ -48,6 +49,7 @@ res.send('Hola, mundo desde Express!');
 
  // Rutas de la API
 app.use("/api", productRoutes);
+app.use('/auth', authRouter);
 
 // Middleware 404 para rutas no encontradas
 app.use((req, res) => {
