@@ -56,7 +56,7 @@ Este proyecto es una API backend desarrollada en Node.js y Express.js que permit
 
     # Orígenes permitidos para CORS
     ALLOWED_ORIGIN_DEV=http://localhost:5173 # Ejemplo para desarrollo Frontend
-    ALLOWED_ORIGIN_PROD=[https://tu-frontend-en-produccion.com](https://tu-frontend-en-produccion.com) # URL de tu frontend en producción
+    ALLOWED_ORIGIN_PROD=[https://tu-frontend-en-produccion.com]
 
     # Claves de API de Firebase (obtenidas desde la consola de Firebase)
     FIREBASE_API_KEY=TU_FIREBASE_API_KEY
@@ -101,16 +101,14 @@ Password: "admin123"
 
 Podés descargar la colección de pruebas Postman para importar y probar fácilmente los endpoints:
 
- [Descargar colección](./docs/E-commerceVoila.postman_collection.json)
+ [Descargar colección](./docs/E-commerceVoila.postman_collection%20(2).json)
 
 o acceder a través del siguiente link:
 
 https://web.postman.co/workspace/09b93cda-5a56-4876-87bb-9ea68592353b/collection/36226506-4c60d7ed-2dbb-4f9a-9154-6c852822a723?action=share&source=copy-link&creator=36226506
 
 
-
 ## Despliegue
 
 La API está desplegada y disponible en:
- [https://]
-
+ [https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com]

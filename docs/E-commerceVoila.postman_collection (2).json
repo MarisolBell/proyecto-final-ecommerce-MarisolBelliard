@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "4c60d7ed-2dbb-4f9a-9154-6c852822a723",
+		"name": "E-commerceVoila",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36226506"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ejemplo@email.com\",\r\n  \"password\": \"admin123\"\r\n}"
+				},
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/auth/login",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdnNVZzcTUwM1Y0ZTJsQmtrY1RlIiwiZW1haWwiOiJlamVtcGxvQGVtYWlsLmNvbSIsImlhdCI6MTc1MTYyNjQ1OCwiZXhwIjoxNzUxNjMwMDU4fQ.8LySuIwSpW3L-JPKTwEkBGum5MB9hq-VtLTCDvwRx94",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n        \"nombre\": \"Aros Jazmin\",\r\n        \"descripcion\": \"AROS MAXI FLOR METALIZADA CON PERLA,TALLE UNICO Medidas: 4 cm x 4 cm\",\r\n        \"imagen\": [\"https://i.postimg.cc/26s5Z9xv/imagen-Aros-Maxi-Flor.webp\",\"https://i.postimg.cc/DwvwLX1C/imagen-Aros-Maxi-FLor2.webp\"],\r\n        \"precio\": 14000,\r\n        \"stock\": 20,\r\n        \"categoria\": \"aros\"\r\n        \r\n    }"
+				},
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/create",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdnNVZzcTUwM1Y0ZTJsQmtrY1RlIiwiZW1haWwiOiJlamVtcGxvQGVtYWlsLmNvbSIsImlhdCI6MTc1MTYyNjQ1OCwiZXhwIjoxNzUxNjMwMDU4fQ.8LySuIwSpW3L-JPKTwEkBGum5MB9hq-VtLTCDvwRx94",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n        \"nombre\": \"Aros Jazmin\",\r\n        \"descripcion\": \"AROS MAXI FLOR METALIZADA CON PERLA,TALLE UNICO Medidas: 4 cm x 4 cm\",\r\n        \"imagen\": [\"https://i.postimg.cc/26s5Z9xv/imagen-Aros-Maxi-Flor.webp\",\"https://i.postimg.cc/DwvwLX1C/imagen-Aros-Maxi-FLor2.webp\"],\r\n        \"precio\": 15000,\r\n        \"stock\": 20,\r\n        \"categoria\": \"aros\"\r\n        \r\n    }"
+				},
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/ZTX5AaOZ8qYxXzYv1shp",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"ZTX5AaOZ8qYxXzYv1shp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/mWoKwxMZQ13URXbtJ6Yk",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"mWoKwxMZQ13URXbtJ6Yk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdnNVZzcTUwM1Y0ZTJsQmtrY1RlIiwiZW1haWwiOiJlamVtcGxvQGVtYWlsLmNvbSIsImlhdCI6MTc1MTYyOTkwOSwiZXhwIjoxNzUxNjMzNTA5fQ.a3DBb24DfyZfWtkm9gmvx99EG_9k1Gl-sLl1tdGWlQw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/mWoKwxMZQ13URXbtJ6Yk",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"mWoKwxMZQ13URXbtJ6Yk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/search?q=carol",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "carol"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/filter?categoria=collares",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "categoria",
+							"value": "collares"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ejemplo@email.com\",\r\n  \"password\": \"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ParcialChangeProduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImdnNVZzcTUwM1Y0ZTJsQmtrY1RlIiwiZW1haWwiOiJlamVtcGxvQGVtYWlsLmNvbSIsImlhdCI6MTc1MTYyOTkwOSwiZXhwIjoxNzUxNjMzNTA5fQ.a3DBb24DfyZfWtkm9gmvx99EG_9k1Gl-sLl1tdGWlQw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n       \r\n        \"stock\": 9\r\n       \r\n    }"
+				},
+				"url": {
+					"raw": "https://proyecto-final-ecommerce-marisolbelliard-vlcs.onrender.com/api/products/4oi9X4awcvWfvBgTydqx",
+					"protocol": "https",
+					"host": [
+						"proyecto-final-ecommerce-marisolbelliard-vlcs",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"products",
+						"4oi9X4awcvWfvBgTydqx"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
